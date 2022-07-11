@@ -40,6 +40,32 @@ active_length = 0
 active_beat = 1
 beat_changed = True
 
+# load in sounds
+hi_hat = mixer.Sound('sounds\kit2\hi hat.wav')
+snare = mixer.Sound('sounds\kit2\snare.wav')
+kick = mixer.Sound('sounds\kit2\kick.wav')
+crash = mixer.Sound('sounds\kit2\crash.wav')
+clap = mixer.Sound('sounds\kit2\clap.wav')
+tom = mixer.Sound('sounds\kit2\\tom.wav')
+pygame.mixer.set_num_channels(instruments * 3)
+
+
+def play_notes():
+    for i in range(len(clicked)):
+        if clicked[i][active_beat] == 1:
+            if i == 0:
+                hi_hat.play()
+            if i == 1:
+                snare.play()
+            if i == 2:
+                kick.play()
+            if i == 3:
+                crash.play()
+            if i == 4:
+                clap.play()
+            if i == 5:
+                tom.play()
+
 def draw_grid(clicks, beat):
     # The numbers below are coords from top left of screen [x, y, width, height]
     left_box = pygame.draw.rect(screen, gray, [0, 0, 200, HEIGHT - 200], 5)
@@ -88,6 +114,9 @@ while run:
     timer.tick(fps)
     screen.fill(black) # up to this point, this creates the back canvas
     boxes = draw_grid(clicked, active_beat) # this draws the grid according to draw_grid() above
+    if beat_changed:
+        play_notes()
+        beat_chaged = False
 
     # This listens for keyboard or mouse input
     for event in pygame.event.get():
