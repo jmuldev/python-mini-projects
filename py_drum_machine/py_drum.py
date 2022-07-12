@@ -13,6 +13,7 @@ HEIGHT = 800
 black = (0, 0, 0)
 white = (255, 255, 255)
 gray = (128, 128, 128)
+dark_gray = (50, 50, 50)
 green = (0, 255, 0)
 gold = (212, 175, 55)
 blue = (0, 255, 255)
@@ -26,6 +27,8 @@ pygame.display.set_caption('Beat Maker')
 # This is a very common font to use or a ttf could be downloaded and used instead
 label_font = pygame.font.Font('freesansbold.ttf', 32) # Roboto-Bold.ttf
 # Can change fonts like this... pygame.font.Font("C:\Windows\Fonts\Arial.ttf",size)
+medium_font = pygame.font.Font('freesansbold.ttf', 24)
+
 
 # Using a common frame rate
 fps = 60
@@ -114,6 +117,18 @@ while run:
     timer.tick(fps)
     screen.fill(black) # up to this point, this creates the back canvas
     boxes = draw_grid(clicked, active_beat) # this draws the grid according to draw_grid() above
+    
+    # lower menu buttons
+    play_pause = pygame.draw.rect(screen, gray, [50, HEIGHT - 150, 200, 100], 0, 5)
+    play_text = label_font.render('Play/Pause', True, white)
+    screen.blit(play_text, (70, HEIGHT - 130))
+    
+    if playing:
+        play_text2 = medium_font.render('Playing', True, dark_gray)
+    else:
+        play_text2 = medium_font.render('Paused', True, dark_gray)
+    screen.blit(play_text2, (70, HEIGHT - 100))
+
     if beat_changed:
         play_notes()
         beat_chaged = False
@@ -127,6 +142,12 @@ while run:
                 if boxes[i][0].collidepoint(event.pos):
                     coords = boxes[i][1]
                     clicked[coords[1]][coords[0]] *= -1
+        if event.type == pygame.MOUSEBUTTONUP:
+            if play_pause.collidepoint(event.pos):
+                if playing:
+                    playing = False
+                elif not playing:
+                    playing = True
 
     beat_length = 3600 // bpm
 
