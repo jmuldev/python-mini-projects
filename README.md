@@ -11,5 +11,10 @@ Path: py_drum_machine
 Source: https://youtu.be/F3J3PZj0zi0
 Sounds: https://hiphopmakers.com/40-free-music-producer-free-drum-kits (Used Free 808 Drum Kit)
 
+2. Python Data Analysis - LinkedIn Learning
+Author/Instructor: Michele Vallisneri
+Path: lil-pda
+Notes: I'm not sure I'll make it through this course. The instructor uses Jupyter notebooks and all the exercise files were taken from there. I'm going to try and use a regular IDE and committing my code to Git as I follow along. Here goes nothing.
+
 # Future Steps
 I don't know how in-depth my curiosity will go with Python but I'll be on the look out for 5 minute to 1-7 day courses.
