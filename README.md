@@ -7,14 +7,14 @@ Other than following along with the documentation or video's, there most likely 
 ## Projects I've followed in the order that I went through them...
 
 1. Drum Machine with Python and Pygame – Full Project Course (2h 48m)
-Path: py_drum_machine
-Source: https://youtu.be/F3J3PZj0zi0
-Sounds: https://hiphopmakers.com/40-free-music-producer-free-drum-kits (Used Free 808 Drum Kit)
+Path: py_drum_machine  
+Source: https://youtu.be/F3J3PZj0zi0  
+Sounds: https://hiphopmakers.com/40-free-music-producer-free-drum-kits (Used Free 808 Drum Kit)  
 
 2. Python Data Analysis - LinkedIn Learning
-Author/Instructor: Michele Vallisneri
-Path: lil-pda
-Notes: I'm not sure I'll make it through this course. The instructor uses Jupyter notebooks and all the exercise files were taken from there. I'm going to try and use a regular IDE and committing my code to Git as I follow along. Here goes nothing.
+Author/Instructor: Michele Vallisneri  
+Path: lil-pda  
+Notes: I'm not sure I'll make it through this course. The instructor uses Jupyter notebooks and all the exercise files were taken from there. I'm going to try and use a regular IDE and committing my code to Git as I follow along. Here goes nothing.  
 Update: I figured out how to make my editor work with Jupyter notebooks without using Anaconda by downloading the Jupyter extension.
 
 # Future Steps
