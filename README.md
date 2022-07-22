@@ -19,9 +19,9 @@ Update: I figured out how to make my editor work with Jupyter notebooks without 
 
 **3. Misc scripts**  
 Path: misc  
-Notes: I want to learn various ways to do some automation at work so I'll be creating some python files and using Google to figure out some solutions.
+Notes: I want to learn various ways to do some automation at work so I'll be creating some python files and using Google to figure out some solutions.  
     1. copy-rename.py - I know this has to be easy but it's my first Python learning experience trying to accomplish this task to take a file, copy it and then rename the copy with a timestamp. This SO source provided what looks like a quick way to do this...  
-        1. Source: https://stackoverflow.com/questions/18383384/python-copy-files-to-a-new-directory-and-rename-if-file-name-already-exists
+        1. Source: https://stackoverflow.com/questions/18383384/python-copy-files-to-a-new-directory-and-rename-if-file-name-already-exists  
     2. 
 
 # Future Steps  
